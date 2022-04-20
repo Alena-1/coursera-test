@@ -5,7 +5,7 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 /*HEADER*/
-#header-nav{
+#header-nav {
     background-color: #f6b319;
     border-radius: 0;
     border: 0;
@@ -77,13 +77,17 @@ body {
 }
 /*End Header*/
 
+/*jumbotron*/
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+}
+
 /*Large devices only*/
 @media (min-width: 1200px) {
-    .jumbotron {
+    .container .jumbotron {
         background: url("../images/jumbotron_1200.jpg") no-repeat;
         height: 675px;
-        box-shadow: 0 0 50px #3F0C1F;
-        border: 2px solid #3F0C1F;
     }
 }
 /*Medium devices only*/
@@ -98,11 +102,9 @@ body {
     /*End Header*/
 
     /*jumbotron*/
-    .jumbotron {
+    .container .jumbotron {
         background: url("../images/jumbotron_992.jpg") no-repeat;
         height: 558px;
-        box-shadow: 0 0 50px #3F0C1F;
-        border: 2px solid #3F0C1F;
     }
     /*End jumbotron*/
 }
@@ -110,11 +112,9 @@ body {
 /*Small devices only*/
 @media (min-width: 768px) and (max-width: 991px) {
     /*jumbotron*/
-    .jumbotron {
+    .container .jumbotron {
         background: url("../images/jumbotron_768.jpg") no-repeat;
         height: 432px;
-        box-shadow: 0 0 50px #3F0C1F;
-        border: 2px solid #3F0C1F;
     }
     /*End jumbotron*/
 }
@@ -138,10 +138,32 @@ body {
     .navbar-brand p img { /*Star-K*/
      height: 20px;
     }
-}
-#collapsable-nav a { /*Collapsed nav menu glyph*/
-    font-size: 1.2em;
-}
-#collapsable-nav a span {
-    font-size: 1em;
+    #collapsable-nav a { /*Collapsed nav menu text*/
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span { /*Collapsed nav menu glyph**/
+        font-size: 1em;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951C49;
+    }
+    #xs-deliver {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    /*End Header*/
+
+    /*jumbotron*/
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+    }
 }
