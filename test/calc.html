@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Calc</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">Panel Heading</div>
+            <div class="panel-body">
+
+                    <label class="text-info" style="display: block; width: 100px">
+                        Calc
+                        <input id="m1" type="text" class="form-control m1 my-2">
+                    </label>
+                    <label class="text-danger" style="display: block; width: 100px">
+                        calc 2
+                        <input id="m2" type="text" class="form-control m2 my-2">
+                    </label>
+                    <button class="btn btn-success my-2" onclick="multi(document.getElementById('m1').value, document.getElementById('m2').value)">
+                        =
+                    </button>
+                    <textarea class="res form-control my-2">
+                    </textarea>
+
+            </div>
+            <div class="panel-footer">Panel Footer</div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
